@@ -1,7 +1,7 @@
 # Vuex学习
 
 #### 项目介绍
-主要是学习Vuex，可以参考汇总
+主要是学习VueCli，可以参考汇总
 https://www.hehaozhao.top/front/articlePage/5w9rpayiwq
 
 #### 软件架构
