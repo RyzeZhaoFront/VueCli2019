@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>demo01</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but demo01 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+</head>
+
+<body>
+    <!-- (前面的/%，是因为不知道为什么注释了也会出错，所以加上)  -->
+    <!-- ​</%=  /%> 用来做不转义插值；-->
+    ​<%= "Hallo Word"+123 %>
+    <%="<h1 style='color:red;'>Hello Vue CLI 3</h1>"%>
+    <!-- ​</%-  /%> 用来做 HTML 转义插值； -->
+    <%-"<h1 style='color:red;'>Hello Vue CLI 3</h1>"%>
+    <!-- ​</%  /%> 用来描述 JavaScript 流程控制。 -->
+    <%if(false){%>
+    <%="<h1 style='color:red;'>Hello Vue CLI 3</h1>"%>
+    <%}%>
+<!-- ​除了被 html-webpack-plugin 暴露的默认值之外，所有客户端环境变量也可以直接使用。-->
+    <div>
+    <!-- BASE_URL来自于process.env -->
+    <!-- <%= JSON.stringify(process.env)%> -->
+    <%= BASE_URL %>
+    </div>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+</body>
+
 </html>
