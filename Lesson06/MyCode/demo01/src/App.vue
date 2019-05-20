@@ -18,7 +18,7 @@
 </script>
 
 <style lang="less">
-    @primary-color: red;
+    @import "./less/colors.less";
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -27,12 +27,6 @@
         color: #2c3e50;
         margin-top: 60px;
     }
-
-    .title {
-        color: @primary-color;
-    }
-
-    .btn-enter {
-        color: @primary-color;
-    }
+    .title {color: @primary-color;}
+    .btn-enter {color: @primary-color; }
 </style>
