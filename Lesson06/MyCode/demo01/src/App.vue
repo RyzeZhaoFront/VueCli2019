@@ -17,7 +17,8 @@
     };
 </script>
 
-<style>
+<style lang="less">
+    @primary-color: red;
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -28,10 +29,10 @@
     }
 
     .title {
-        color: red;
+        color: @primary-color;
     }
 
     .btn-enter {
-        color: red;
+        color: @primary-color;
     }
 </style>
