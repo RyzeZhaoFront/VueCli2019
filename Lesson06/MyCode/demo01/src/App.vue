@@ -17,8 +17,10 @@
     };
 </script>
 
-<style lang="less">
-    @import "./less/colors.less";
+<!--修改为使用scss-->
+<style lang="scss">
+//   注释手动导入
+    /*@import "./less/colors.less";*/
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -27,6 +29,9 @@
         color: #2c3e50;
         margin-top: 60px;
     }
-    .title {color: @primary-color;}
-    .btn-enter {color: @primary-color; }
+    .title {
+    /*修改为使用scss*/
+    color:$primary-color;
+    font-size:$normal-size;}
+    .btn-enter {color:$primary-color; }
 </style>

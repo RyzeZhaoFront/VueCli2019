@@ -81,12 +81,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-//上边加入less预处理器，这里引入colors文件
-@import "../less/colors.less";
+// 注释手动导入
+/*@import "../less/colors.less";*/
 h3 {
   margin: 40px 0 0;
   // 修改这里
   color: @primary-color;
+  //使用less的文字大小
+  font-size:@normal-size;
 }
 ul {
   list-style-type: none;
