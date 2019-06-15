@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title> Lesson09.Vue CLI中的构建目标</title>
+  <script src="https://unpkg.com/vue"></script>
+<!-- 1.引入组件包 -->
+  <script src="./../dist/myvue.js"></script>
+</head>
+<body>
+  <!-- 2.使用时，需要加上命令的--name的名字（通常与上面引入组件包的名字相同） -->
+<myvue-my-button></myvue-my-button>
+<!-- 3.原来的HalloWord.vue会自动根据大写字符转换为全小写，并以-分割 -->
+<myvue-hello-world></myvue-hello-world>
+</body>
+</html>
